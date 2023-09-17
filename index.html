@@ -9,13 +9,11 @@
             /* Add a black background color to the top navigation */
 .topnav {
   background: white;
-  opacity:38%;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    opacity:90%;
   float: left;
   color: black;
   text-align: center;
@@ -42,9 +40,6 @@
   color: white;
   font-size: 30px;
 } 
-.header:hover {
-  opacity: 90%;
-}
 .row:after {
   content: "";
   display: table;
@@ -152,6 +147,74 @@
   text-decoration: none;
   cursor: pointer;
 }
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+width: 100%;
+}
+
+/* Add styles to the form container */
+.form-container {
+width:100%;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 
         </style>
     </head>
@@ -186,6 +249,14 @@
     <span class="close">&times;</span>
     <h1 style="background-color: red; color: white; text-align: center;">Daily News Related To Welestorm</h1>
     <p>Welestorm's Website Is In Under Development And We Therby Request You To Navigate Your Fastest Way To The Exit As Website May Be Down In Some Time! Updates Have Not Been Applied Yet So Please Again Navigate To Your Nearest Exit From This Window. 457CB4ERROR21x990000</p>
+<h2>Mordern Stage 140</h2>  
+<p>Welestorm First Time Makes The Chat Feature, Developed To The Stage 140, FTW Still At Stage 139.</p>
+<h2>The Ultimate Hoax!</h2>
+<p>FTW Ceo And Founder Aadit Leaves FTW In Hands Of Aashish And Now Will FTW Survive In These Difficult Circumtances</p>
+<h2>Astron In Trouble</h2>
+<p>Astron CEO Lies About His Company Existence, Wants His Power Back In A Second</p>
+<h2>The Peace</h2>
+<p>FTW And Welestorm Will Continuie Sharing Their Power, 60% With FTW, 40% With Welestorm. Astron Wants To Be Revived Once Again, But Will Anyone Show This Much Care? Final Astron Decision Will Be Taken On 27/10/23 By Wele-Police And FTW-Police</p>
   </div>
 
 </div>
@@ -260,6 +331,28 @@ window.onclick = function(event) {
             
             
           </div>
+<div class="row">
+<div class="chat-popup" id="myForm">
+  <form action="mailto:siddy0060@gmail.com" class="form-container" method="post" action="mailto:siddy0060@gmail.com">
+    <h1>First Time! Chat With Welesotrm! This Feature Is Not In FTW! </h1>
+
+    <label for="msg"><b>Write Your Message With Your Name For Verification. Mail Application Window Will Popup!</b></label>
+    <textarea placeholder="To Welestorm Official Email" name="msg" required href="mailto:siddy0060@gmail.com"></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
         
         </div>
     </body>
