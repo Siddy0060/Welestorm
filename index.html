@@ -3,7 +3,65 @@
         <title>Welestorm</title>
         <style>
             /* Bordered form */
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
 
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10004;";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "&#10006;";
+}
             .body {
                 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 margin: 10;
@@ -444,6 +502,19 @@ function closeForm() {
 
 </form>
 </div>
+            <div class="container">
+  <form action="https://script.google.com/macros/s/AKfycbyxi9Q1TcQ0yaazuQep7sdFhGo2jX7M1007LTYBFCJctGOwbTa32q1GWoCOYGbC0qdB/exec" method="POST">
+    <label for="usrname">Administrator Username</label>
+    <input type="usrname" id="usrname" name="usrname" required>
+
+    <label for="psw">Administrator Security Password</label>
+  <  input type="psw" id="psw" name="psw" pattern="[d-g]" title="paswwordforadministrator" required>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
         
         </div>
     </body>
