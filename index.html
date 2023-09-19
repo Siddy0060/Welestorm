@@ -220,41 +220,6 @@ width:100%;
 .some-class {
   box-sizing: border-box;
 }
-input[type=name] {
- padding: 10px;
- border: 2px solid #eee;
- border-radius:10px;
-     padding:10px;
-  border:0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-}
-input[type=password] {
-  padding: 15px;
-    border: 2px solid #eee;
-    border-radius:10px;
-     padding:10px;
-  border:0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-}
-            .signup-text-input {
-   // styles here
-}
-button {
-
-  /* remove default behavior */
-  appearance:none;
-  -webkit-appearance:none;
-
-  /* usual styles */
-  padding:10px;
-  border:none;
-  background-color:#3F51B5;
-  color:#fff;
-  font-weight:600;
-  border-radius:5px;
-  width:100%;
-
-}
 
         </style>
     </head>
@@ -420,14 +385,14 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
-            <form action="https://script.google.com/macros/s/AKfycbyxi9Q1TcQ0yaazuQep7sdFhGo2jX7M1007LTYBFCJctGOwbTa32q1GWoCOYGbC0qdB/exec" method="post">
-            <input name="Email" type="name" placeholder="Email" required>
-  <input name="Name" type="password" placeholder="Name" required>
-      <input name="Password" type="password" placeholder="Password" required>
-                <input name="ConfirmPassword" type="password" placeholder="Confirm Password" required>
+            <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbyxi9Q1TcQ0yaazuQep7sdFhGo2jX7M1007LTYBFCJctGOwbTa32q1GWoCOYGbC0qdB/exec"
+>
+  <input name="Email" type="email" placeholder="Email" required>
+  <input name="Name" type="text" placeholder="Name" required>
   <button type="submit">Send</button>
-            
-            </form>
+</form>
         
         </div>
     </body>
