@@ -248,6 +248,15 @@ width:100%;
   font-size: 35px;
   font-weight: bold;
 }
+.accountpage {
+    margin: 20px;
+    padding: 324px;
+    text-align: center;
+  background: url('OurTypeIMG.jpg');
+  color: white;
+  font-size: 30px;
+}
+    
 
 
         </style>
@@ -414,36 +423,15 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
-            <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
-
-<!-- The Modal -->
-<div id="id01" class="loginpage">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="endloginpage" title="Cancel Login/Signup">&times;</span>
-
-  <!-- Modal Content -->
-  <form class="loginpage-content" action="https://script.google.com/macros/s/AKfycbyxi9Q1TcQ0yaazuQep7sdFhGo2jX7M1007LTYBFCJctGOwbTa32q1GWoCOYGbC0qdB/exec">
-    
-
-    <div class="container" style="background-color:#f1f1f1;padding:320px">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="email" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
+<div class="accountpage">
+            <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbyxi9Q1TcQ0yaazuQep7sdFhGo2jX7M1007LTYBFCJctGOwbTa32q1GWoCOYGbC0qdB/exec"
+>
+  <input name="Email" type="email" placeholder="Email" required>
+  <input name="Name" type="text" placeholder="Name" required>
+  <button type="submit">Send</button>
+</form>
 </div>
         
         </div>
