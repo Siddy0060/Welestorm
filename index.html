@@ -260,6 +260,11 @@ width:100%;
 
 
         </style>
+        <style>
+div{
+   text-align: center;   /* Center Align */
+}
+</style>
     </head>
     <body style="background-image: url('greybg.jpg');">
         <div class="body">
@@ -431,8 +436,11 @@ function closeForm() {
   method="POST" 
   action="https://script.google.com/macros/s/AKfycbyxi9Q1TcQ0yaazuQep7sdFhGo2jX7M1007LTYBFCJctGOwbTa32q1GWoCOYGbC0qdB/exec"
 >
-  <input name="Email" type="email" placeholder="Email" required  style="height:50px; width:900px;">
-  <input name="Name" type="text" placeholder="Name" required  style="height:50px; width:900px;">
+<div>
+<input name="Email" type="email" placeholder="Email" required  style="height:50px; width:1000px;;margin:10px;border-radius:25px">
+  <input name="Name" type="text" placeholder="Name" required  style="height:50px; width:1000px;;margin:10px;border-radius:25px;">
+<button style="height:50px; width:1000px;;margin:10px;border-radius:25px">Send</button>
+</div>
   <button type="submit">Send</button>
 </form>
 </div>
